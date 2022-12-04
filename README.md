@@ -13,12 +13,12 @@ This is a basic idapython script to get you started with analyzing disassembly w
 
 The script has two functions designed for being called on the address of a subroutine:
 
-*1. get_description(ea)*
+_1. get_description(ea)_
 
 This function will provide GPT with the disassembly of the subroutine and request a plain-text description. It is then added to IDA as a function comment.
 
 
-*2. refactor*
+_2. refactor(ea)_
 
 This is best called after `get_description` so GPT has a better understanding of the function. It will request variable and location name suggestions from GPT, as well as a function name. These are then written to your idb.
 
